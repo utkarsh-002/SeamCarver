@@ -1,0 +1,69 @@
+# Compiled binaries
+seam_carver
+create_face_mask
+visualize_comparison
+
+# Build artifacts
+*.o
+*.out
+*.exe
+*.app
+*.dSYM/
+
+# VS Code
+.vscode/
+!.vscode/c_cpp_properties.json
+!.vscode/tasks.json
+
+# Generated comparison files (examples - keep masks, exclude large outputs)
+comparison_*.jpg
+resized*.jpg
+output*.jpg
+*_side_by_side.jpg
+*_no_protection.jpg
+*_with_protection.jpg
+
+# Keep example masks for documentation
+!example_face_mask.png
+!comparison_face_mask.png
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Thumbnails
+Thumbs.db
+
+# Test images (optional - comment out if you want to include test images)
+*.jpeg
+*.jpg
+*.png
+!*.png
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*~
+
+# IDE
+.idea/
+*.iml
+.vscode/settings.json
+.vscode/launch.json
+
+# CMake (if using CMake in future)
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Dependencies
+*.a
+*.so
+*.dylib
